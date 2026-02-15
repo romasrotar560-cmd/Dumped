@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="dupemod"
+version="1.0"
+displayName="Dupe Mod"
+authors="Romas"
+description="Simple dupe mod for 1.16.5"
