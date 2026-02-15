@@ -14,7 +14,7 @@ public class DupeMod {
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("dupe").executes(context -> {
-            ServerPlayerEntity player = context.getSource().asPlayer();
+            ServerPlayerEntity player = context.getSource().getPlayerOrException();
             ItemStack item = player.getOffhandItem();
             if (item.isEmpty()) {
                 player.sendMessage(new StringTextComponent("§cПоложи вещь в левую руку!"), player.getUUID());
